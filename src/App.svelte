@@ -14,7 +14,6 @@
   }
   const getSlides = async (url: string) => {
     const data:Slide[] = await (await fetch(url)).json()
-    console.log(data)
     slides = data
   }
   if(window.location.search){
